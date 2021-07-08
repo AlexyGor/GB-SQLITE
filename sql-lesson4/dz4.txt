@@ -1,0 +1,6 @@
+1) SELECT SUBSTR(start_date, 7, 4) || '-' || SUBSTR(start_date, 4, 2) || '-' || SUBSTR(start_date, 1, 2) FROM streams;
+2) SELECT id, MAX(start_date) AS 'max_date' FROM  training_groups ;
+3) SELECT DISTINCT(SUBSTR(start_date, 7, 4)) FROM  training_groups;
+4) SELECT *  COUNT(id) AS  'total_teachers' FROM teachers ;
+5) SELECT SUBSTR(start_date) FROM streams ORDER BY start_date DESC LIMIT 2;
+6) SELECT student_id, AVG(grade) FROM grades WHERE teachers_id = 1;
